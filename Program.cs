@@ -7,16 +7,14 @@ namespace BasicCSharp
         
 
         //creating methods
-        
-        static void Main(string[] args)
-        {   
-            //My first code in c# using vscode
-            Console.WriteLine("Hello World!");
-            
+        static void SayHiToUser(string nameOfUser)
+        {
+            Console.WriteLine("Hello "+ nameOfUser);
+        }
 
+        static void AllAboutVariables()
+        {
             //Variables = cotainer of specific data
-
-
             //string= variables store text value of data
             string stringName;
             string stringName2;
@@ -46,12 +44,18 @@ namespace BasicCSharp
             // this code only gets 6 character start from index 10
             Console.WriteLine("substring start from indext 10 get 6 char: " + stringName.Substring(10,6));
             //--END of strings, for more string method you can search on google cs string methods.
+        }
 
+        static void AllAboutNumbers()
+        {
             // NUMBERS
             // convert numbers to Int32 or double or any number variables
             int num= Convert.ToInt32("65");
             Console.WriteLine("Converted to int: "+num);
+        }
 
+        static void AllAboutArrays()
+        {
             //Array
             int[] luckyNumbers= { 1,2,3,4,5,3 };
             Console.WriteLine("Array index 0: "+luckyNumbers[0]);
@@ -65,9 +69,19 @@ namespace BasicCSharp
             friends[3]="Lysa";
             friends[4]="Eugene";
             Console.WriteLine("Array string 0: "+friends[0]);
+        }
 
 
-
+        static void Main(string[] args)
+        {   
+            //My first code in c# using vscode
+            Console.WriteLine("Hello World!");
+            
+            //calling the method
+            SayHiToUser("Mack");
+            AllAboutVariables();
+            AllAboutNumbers();
+            AllAboutArrays();
             Console.ReadLine();
 
 
