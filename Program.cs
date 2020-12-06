@@ -5,6 +5,44 @@ namespace BasicCSharp
     class Program
     {
         
+        //creating switch case statement
+
+        static string SampleSwithchCase(int dayNum)
+        {
+            string dayName;
+            switch (dayNum)
+            {
+                case 0:
+                    dayName="Sunday";
+                    break;
+                case 1:
+                    dayName="Monday";
+                    break;
+                case 2:
+                    dayName="Tuesday";
+                    break;
+                case 3:
+                    dayName="Wednesday";
+                    break;
+                case 4:
+                    dayName="Thursday";
+                    break;
+                case 5:
+                    dayName="Friday";
+                    break;
+                case 6:
+                    dayName="Saturday";
+                    break;
+                default:
+                    dayName="Invalid Number";
+                    break;
+            }
+
+            return dayName;
+
+        }
+
+
         //creating method with ifelse statement
         static void SampleIfElse(){
 
@@ -119,7 +157,9 @@ namespace BasicCSharp
             //calling if else method
             SampleIfElse();
             Console.WriteLine("From Method IF else: "+GetMax(10,5));
-            
+
+            //calling switchcase 
+             Console.WriteLine("From switchcase: "+SampleSwithchCase(4));
 
             //calling the method
             SayHiToUser("Mack");
