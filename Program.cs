@@ -6,7 +6,8 @@ namespace BasicCSharp
     {
         
 
-
+        //creating methods
+        
         static void Main(string[] args)
         {   
             //My first code in c# using vscode
