@@ -5,8 +5,44 @@ namespace BasicCSharp
     class Program
     {
         
+        //creating method with ifelse statement
+        static void SampleIfElse(){
+
+            bool isMale= true;
+            bool isTall=true;
+
+            if (isMale&&isTall)// you can also use OR ||
+            {   //if the value is true
+                Console.WriteLine("You are tall male");
+            } else
+            {   
+                Console.WriteLine("You are not tall male");
+            }
+        }
+
+        static int GetMax(int num1,int num2)
+        {
+            int result;
+            if (num1>num2)
+            {
+                result = num1; 
+            }else
+            {
+                result= num2;
+            }
+            return result;
+        }
+
+        //creating methods with return statements
+        static int CubeMethodWithReturn(int num)
+        {
+            int result = num*num*num;
+            return result;    
+        }
+
 
         //creating methods
+        // you can pass any variables data type to methods
         static void SayHiToUser(string nameOfUser)
         {
             Console.WriteLine("Hello "+ nameOfUser);
@@ -77,6 +113,14 @@ namespace BasicCSharp
             //My first code in c# using vscode
             Console.WriteLine("Hello World!");
             
+            //calling the return method
+            Console.WriteLine("this from Method with return; "+CubeMethodWithReturn(5));
+
+            //calling if else method
+            SampleIfElse();
+            Console.WriteLine("From Method IF else: "+GetMax(10,5));
+            
+
             //calling the method
             SayHiToUser("Mack");
             AllAboutVariables();
